@@ -1,0 +1,132 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: rgb(49, 47, 47);
+
+}
+#intro, .portProj {
+  
+  background-image: linear-gradient(to bottom right, #DE78AA, #78DEAB);
+  
+  
+}
+.hide {
+  visibility: hidden;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 90%;
+  position: sticky;
+  top: 20px;
+  margin-top: 0px;
+  
+
+}
+h1 {
+  font-family: Helvetica;
+  font-size: 8vw;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#intro {
+  display: flex;
+  width: 100%;
+  
+  height: 500px;
+}
+#profilePic{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+  margin-bottom:auto;
+  
+  
+}
+#headerText{
+  position:absolute;
+}
+#list {
+  font-family: Helvetica;
+  font-size: 3vw;
+}
+#profilePic img{
+  border-radius: 50%;
+  height: 400px;
+  align-self: center;
+}
+main, #portfolio {
+  width: 100%;
+}
+
+#portfolio h2 {
+  text-align: center;
+}
+.portProj {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  
+
+}
+.portProj a {
+  height: 90%;
+}
+.portProj img {
+  width: 100%;
+}
+#projs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
